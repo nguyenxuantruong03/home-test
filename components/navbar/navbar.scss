@@ -1,0 +1,209 @@
+.screen-navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.navbar {
+  padding: 0 140px;
+  height: 74px;
+  background-color: transparent;
+  line-height: 74px;
+  .logo{
+    cursor: pointer;
+  }
+  .menuwrapper {
+    width: auto;
+    float: right;
+    height: 100%;
+    padding: 0;
+    .modal:hover + .hide,
+    .hide:hover {
+      display: block;
+      width: 200px;
+      color: #333;
+      position: absolute;
+      top: 65px;
+      border-radius: 0.375rem;
+      padding-inline-start: 0px;
+      background-color: #fff;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      padding: 0px 15px 0px 15px;
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+        0 2px 4px -2px rgb(0 0 0 / 0.1);
+      &:nth-child(4) {
+        margin-left: 80px;
+      }
+      &:nth-child(6) {
+        margin-left: 160px;
+      }
+      &:nth-child(8) {
+        margin-left: 250px;
+      }
+      &:nth-child(10) {
+        margin-left: 380px;
+      }
+      &:nth-child(12) {
+        margin-left: 465px;
+      }
+      &:nth-child(14) {
+        margin-left: 550px;
+      }
+      &:nth-child(16) {
+        margin-left: 660px;
+      }
+    }
+
+    .hide {
+      display: none;
+      position: relative;
+    }
+    //Multiple-lever
+    .menu-item-multi-level {
+      position: relative; // Cần thiết để xác định vị trí cho mục con
+      cursor: pointer;
+      list-style: none;
+      line-height: normal;
+      width: 100%;
+      padding: 10px 0px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0px;
+      text-transform: none;
+      border-top: 1px solid #ccc;
+      &:hover {
+        .hide2,
+        .hide2:hover {
+          display: block;
+        }
+      }
+      /* Lớp giả css của menu-item-multi-level giúp nó có thể đụng vào 
+       khi hover vào hide2 */
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -18px;
+        width: 18px;
+        height: 100%;
+      }
+    }
+    .hide2 {
+      display: none;
+      position: absolute;
+      top: 0; // Điều chỉnh vị trí xuất hiện của mục con tại đây
+      left: 100%; // Điều chỉnh vị trí xuất hiện của mục con tại đây
+      width: 200px;
+      color: #333;
+      border-radius: 0.375rem;
+      padding: 0px 15px 0px 15px;
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+        0 2px 4px -2px rgb(0 0 0 / 0.1);
+      list-style: none;
+      line-height: normal;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0px;
+      text-transform: none;
+      cursor: pointer;
+      left: 217px;
+      background-color: #fff;
+    }
+    .menu-item-multi {
+      list-style: none;
+      line-height: normal;
+      border-top: 1px solid #ccc;
+      width: 200px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0px;
+      text-transform: none;
+      padding: 10px 0px;
+      cursor: pointer;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+    }
+    .menu-item-multi-none-border {
+      list-style: none;
+      line-height: normal;
+      width: 100%;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0px;
+      text-transform: none;
+      cursor: pointer;
+    }
+    .menu-item {
+      list-style: none;
+      line-height: normal;
+      width: 100%;
+      padding: 10px 0px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0px;
+      border-top: 1px solid #ccc;
+      text-transform: none;
+      cursor: pointer;
+    }
+    .menu-item-icon {
+      float: right;
+    }
+    .menu-item-none-boder {
+      list-style: none;
+      line-height: normal;
+      width: 200px;
+      padding: 10px 0px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0px;
+      text-transform: none;
+      cursor: pointer;
+      border: none;
+    }
+    .menu-item:hover,
+    .menu-item-none-boder:hover,
+    .menu-item-multi:hover,
+    .menu-item-multi-level:hover,
+    .menu-item-multi-none-border:hover {
+      color: #ff4a52;
+    }
+    .item {
+      padding: 10px 0 30px 0;
+      font-size: 13px;
+      font-weight: 600;
+      margin-left: 30px;
+      cursor: pointer;
+    }
+    .item-icon {
+      margin-bottom: -8px;
+      padding-left: 2px;
+    }
+    .item1 {
+      position: relative;
+      top: 8px;
+      right: 8px;
+      margin-left: 25px;
+      cursor: pointer;
+    }
+    .item2 {
+      position: relative;
+      top: 8px;
+      cursor: pointer;
+    }
+    .dot {
+      position: absolute;
+      right: -8px;
+      bottom: 8px;
+      height: 15px;
+      width: 15px;
+      background-color: #ff4a52;
+      line-height: normal;
+      border-radius: 50%;
+      font-size: 11px;
+      color: #fff;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+}

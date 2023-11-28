@@ -1,0 +1,20 @@
+
+  .parallax {
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .parallax video {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .content {
+    background-color: #fff;
+  }
+  
