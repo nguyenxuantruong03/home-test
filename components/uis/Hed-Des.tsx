@@ -8,17 +8,19 @@ interface HeadingDescriptionProps {
   fontSizedescription?: string;
   color?: string;
   textalign?: string;
-  fontweight?: number;
+  fontweightdes?: string |number;
+  colordes?: string;
 }
 
 const HeadingDescription: React.FC<HeadingDescriptionProps> = ({
-  fontweight,
+  fontweightdes,
   textalign,
   fontSizeheading,
   heading,
   description,
   color,
   fontSizedescription,
+  colordes
 }) => {
   const headingStyle: React.CSSProperties = {
     textAlign: (textalign as React.CSSProperties["textAlign"]) || "center",
@@ -26,12 +28,14 @@ const HeadingDescription: React.FC<HeadingDescriptionProps> = ({
     marginBlockStart: "0em",
     marginBlockEnd: "0em",
     color: color || "#333",
+    fontFamily: "'Poppins', sans-serif", 
+    fontWeight: 900, 
   };
   const descriptionStyle: React.CSSProperties = {
     textAlign: (textalign as React.CSSProperties["textAlign"]) || "center",
     fontSize: fontSizedescription || "15px",
-    fontWeight: fontweight || 600,
-    color: "#b1b4b9",
+    fontWeight: fontweightdes || 600,
+    color: colordes || "#b1b4b9",
   };
 
   return (

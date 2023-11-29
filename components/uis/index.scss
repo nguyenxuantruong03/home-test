@@ -242,3 +242,24 @@ font-weight: 900;
  .card-product-screen:hover .currency-no-transform {
   transform: scale(1.05);
 }
+
+//InfoChooseUs
+
+.info-choose-us-screen{
+  width: 395px;
+  height: 388px;
+  position: relative;
+}
+
+.info-choose-us-image{
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+}
+.info-choose-us-wrapper-image{
+  width: 395px;
+  heigh: 262px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
