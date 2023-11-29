@@ -31,7 +31,7 @@ const HeadingDescription: React.FC<HeadingDescriptionProps> = ({
     textAlign: (textalign as React.CSSProperties["textAlign"]) || "center",
     fontSize: fontSizedescription || "15px",
     fontWeight: fontweight || 600,
-    color: color || "#b1b4b9",
+    color: "#b1b4b9",
   };
 
   return (

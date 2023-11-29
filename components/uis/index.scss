@@ -15,7 +15,6 @@
 }
 
 //TextIcon
-
 .input-container {
   display: flex;
   flex-direction: column;
@@ -29,8 +28,8 @@
 }
 
 .inline {
-  width: 280px;
-  height: 38px;
+  width: 249px;
+  height: 36px;
   border: none;
   color: #333;
   outline: none;
@@ -51,8 +50,6 @@
 //Option icon
 .select-container {
   display: flex;
-  width: 280px;
-  height: 38px;
   justify-content: center;
 }
 
@@ -64,7 +61,7 @@
 .select-box {
   border: none;
   appearance: none;
-  width: 100%;
+  width: 280px;
   height: 38px;
   outline: none;
   background-color: #ffffff;
@@ -90,7 +87,6 @@
   background-color: #ff4857;
   width: 280px;
   height: 38px;
-  margin: auto;
   color: #fff;
   padding: 10px 20px;
   font-size: 16px;
@@ -99,7 +95,7 @@
   border-radius: 4px;
 
   &:hover {
-    background-color: #2980b9;
+    background-color: #1ec6b6;
   }
 
   &.disabled {

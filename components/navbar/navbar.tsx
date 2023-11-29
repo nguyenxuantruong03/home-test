@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className="screen-navbar">
       <div className="navbar">
         <Image
-          src="/images/logo2.png"
+          src="/images/logo.png"
           className="logo"
           height="22"
           width="92"
