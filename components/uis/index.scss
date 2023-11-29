@@ -258,8 +258,65 @@ font-weight: 900;
 }
 .info-choose-us-wrapper-image{
   width: 395px;
-  heigh: 262px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+//Card new 
+.card-new-screen {
+  width: 395px;
+  height: 535px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.card-new-screen:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.card-new-image {
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card-new-wrapper {
+  padding: 15px 35px;
+}
+.card-product-review{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ font-size: 12px;
+}
+.card-new-date{
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.card-new-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+}
+.card-new-description {
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.card-new-readmore{
+  display: flex;
+  align-items: center;
+  color: #9f9f9f;
+  padding: 0 35px;
+}
+.card-new-readmore:hover{
+  color: #333;
 }
