@@ -70,17 +70,16 @@
   border-radius: 5px;
   font-size: 15px;
   padding: 0px 15px;
-  padding-right: 30px; 
+  padding-right: 30px;
 }
 
 .select-icon {
   position: absolute;
   top: 50%;
-  right: 10px; 
+  right: 10px;
   transform: translateY(-50%);
   color: #9b9b9b;
 }
-
 
 //Button
 .custom-button {
@@ -104,3 +103,142 @@
   }
 }
 
+//popular
+.card-popular {
+  position: relative;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  width: 289px;
+  height: 300px;
+}
+
+.card-popular:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.card-popular-image {
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.text-popular {
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  bottom: -5px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: "Work Sans", sans-serif;
+}
+
+//Best value trip
+.card-product-screen {
+  width: 395px;
+  height: 388px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.card-product-screen:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.card-product-sale{
+  height: 40px;
+  width: 40px;
+  background-color: #1EC6B6;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-family: "Work Sans", sans-serif;
+  position: absolute;
+  right: -18px;
+  top: -15px;
+}
+
+.card-product-image {
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card-product-wrapper {
+  padding: 15px 15px;
+}
+.card-product-review{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ font-size: 12px;
+}
+.card-product-heading {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.card-product-description {
+  font-size: 13px;
+}
+.card-product-start{
+  display: flex; 
+  align-items: center;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  margin-top: 22px;
+}
+.checked {
+  color: #50E3C2;
+}
+.card-product-date{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  display: flex; 
+  align-items: center;
+  margin-top: 22px;
+}
+.card-product-date-icon{
+  margin-right: 2px;
+}
+
+//Currency
+.currency-screen{
+  display: flex;
+  padding: 0px 5px 0px 5px;
+  height: 30px;
+  background-color: #ff4a52;
+  color: #fff;
+  font-family: "Mooli", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  bottom: 140px;
+  font-size: 16px;
+}
+ .currency-old-value{
+color: #ff828c;
+text-decoration: line-through;
+font-family: "Poppins", sans-serif;
+font-weight: 900;
+ }
+ .currency-value{
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  margin-left: 0.2rem;
+ }
+ .card-product-screen:hover .currency-no-transform {
+  transform: scale(1.05);
+}

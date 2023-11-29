@@ -1,3 +1,5 @@
+import BestValueTrip from "../best-trip/best-trip";
+import PopularDestination from "../popular/popular";
 import Video from "../uis/video";
 import "./slider.scss";
 const Slider = () => {
@@ -58,12 +60,7 @@ const Slider = () => {
         options3={allCategoryOptions}
         options4={destination}
       />
-
-      <div className="content">
-        Scroll Up and Down this page to see the parallax scrolling effect. This
-        div is just here to enable scrolling. Tip: Try to remove the
-        background-attachment property to remove the scrolling effect.
-      </div>
+      
     </>
   );
 };

@@ -23,12 +23,13 @@
   margin-top: 290px;
 }
 .input-select-slider-first{
-  display: flex;
   margin-top: 20px;
   align-items: center;
+  display: flex;
+  max-width:1200px ;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: space-between;
-  padding-left: 150px;
-  padding-right: 150px;
 }
 .input-select-slider-second{
   display: flex;
