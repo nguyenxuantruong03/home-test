@@ -320,3 +320,136 @@ font-weight: 900;
 .card-new-readmore:hover{
   color: #333;
 }
+.card-new-readmore-wrapper{
+  width: 180px;
+}
+
+//Footer
+.footer-screen{
+  padding: 0 116px;
+}
+.footer-wrapper{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  color: #fff;
+}
+.footer-awards{
+width: 435px;
+height: 243px;
+}
+.footer-title{
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  margin-block-start: 3em;
+    margin-block-end: 0/5em;
+}
+.footer-awards-description{
+  color: #bfbfbf;
+  font-size: 15px;
+}
+.footer-awards-image{
+  margin-top: 25px;
+  
+}
+.footer-contact{
+  width: 435px;
+  height: 236px;
+}
+.footer-contact-info{
+  display: flex;
+  align-items: center;
+  color: #bfbfbf;
+  font-size: 15px;
+}
+.footer-contact-info-margin-top{
+  margin-top: 15px;
+}
+.footer-contact-icon{
+  margin-right: 12px;
+}
+.footer-social{
+padding: 0px 20px;
+display: flex;
+align-items: center;
+margin-top: 25px;
+}
+.footer-facebook{
+  margin-right: 15px;
+}
+.footer-facebook-icon{
+  width: 40px;
+  height: 40px;
+  color: #2D5F9A;
+}
+.footer-twitter{
+  margin-right: 15px;
+}
+.footer-twitter-icon{
+  width: 45px;
+  height: 45px;
+  color: #00C3F3;
+}
+.footer-youtube{
+  margin-right: 15px;
+}
+.footer-youtube-icon{
+  width: 55px;
+  height: 55px;
+  color: #cc181e;
+}
+.footer-pinterest{
+  margin-right: 15px;
+}
+.footer-pinterest-icon{
+  width: 40px;
+  height: 40px;
+  color: #bd081c;
+}
+.footer-instagram-icon{
+  width: 45px;
+  height: 45px;
+  color: #405de6;
+  border-radius: 50%;
+}
+.footer-recent{
+  width: 410px;
+  height: 314px;
+}
+.footer-copyright{
+  display: block;
+}
+.footer-recent-image{
+  border-radius: 5px;
+  margin-right: 17px;
+  cursor: pointer;
+}
+.footer-recent-image-margin-top{
+margin-top: 10px;
+}
+.footer-recent-image-border-not-margin-right{
+  border-radius: 5px;
+  cursor: pointer;
+}
+.footer-copyright{
+  margin-top: 40px;
+border-top: 1px solid #222222;
+font-size: 12px;
+color: #ccc;
+}
+.footer-copyright-wrapper{
+  display: flex;
+  align-items: center;
+  margin-top: 45px
+}
+.footer-copyright-title{
+  display: flex;
+  margin-left: 600px;
+}
+.footer-copy-right-title-space{
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-left: 15px;
+}

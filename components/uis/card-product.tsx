@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Currency from "./currency";
-import { Clock3, Star } from "lucide-react";
+import { Clock3 } from "lucide-react";
 import { FaStar } from "react-icons/fa";
 
 interface CardProductProps {

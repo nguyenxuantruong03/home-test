@@ -30,8 +30,9 @@ const CardNew: React.FC<CardNewProps> = ({
         <div className="card-new-heading">{heading}</div>
         <div className="card-new-description">{description}</div>
       </div>
-
+<div className="card-new-readmore-wrapper">
       <div className="card-new-readmore">Read More  <ChevronRight width="18"/></div>
+</div>
     </div>
   );
 };
