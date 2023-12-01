@@ -1,6 +1,6 @@
 .backtoTop{
     position: fixed;
-    left: 65%;
+    left: 90%;
     bottom: 80px;
     z-index: 998;
     cursor: pointer;
@@ -19,16 +19,17 @@
     transform: translateY(-5px);
 }
 
-@media (min-width: 768px) {
+@media (min-width:600px) and (max-width: 850px) { 
     .backtoTop{
-        left: 80%;
+        left: 92%;
         bottom: 40px;
     }
-}
-
-@media (min-width: 1024px) {
-    .backtoTop{
-        left: 90%;
     }
-}
+    @media only screen and (max-width: 450px) { 
+        .backtoTop{
+            left: 24%;
+            bottom: 40px;
+        }
+    }
+
 

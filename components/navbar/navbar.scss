@@ -223,3 +223,21 @@
 		transform: translate3d(0, 0, 0);
 	}
 }
+
+@media (min-width:600px) and (max-width: 850px) { 
+  .item.modal{
+    display: none;
+  }
+  .navbar {
+    padding: 0 70px;
+  }
+ }
+
+ @media only screen and (max-width: 420px) { 
+  .item.modal{
+    display: none;
+  }
+  .navbar {
+    padding: 0 70px;
+  }
+ }

@@ -11,3 +11,16 @@
     margin-top: 50px;
     cursor: pointer;
 }
+
+@media (min-width:600px) and (max-width: 850px) { 
+    .screen-valuetrip {
+        padding-top: 50px;
+    }
+    .content-besttrip{
+        padding: 0px 20px;
+    }
+   }
+  
+   @media only screen and (max-width: 420px) { 
+   
+   }
