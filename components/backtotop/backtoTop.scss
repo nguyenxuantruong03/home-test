@@ -1,0 +1,34 @@
+.backtoTop{
+    position: fixed;
+    left: 65%;
+    bottom: 80px;
+    z-index: 998;
+    cursor: pointer;
+}
+
+.backtoTop-icon{
+    width: 50px;
+    height: 48px;
+    background-color: #1EC6B6;
+    border-radius: 50%;
+    font-size: 3px;
+    color: #fff;
+}
+
+.backtoTop-icon:hover{
+    transform: translateY(-5px);
+}
+
+@media (min-width: 768px) {
+    .backtoTop{
+        left: 80%;
+        bottom: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .backtoTop{
+        left: 90%;
+    }
+}
+

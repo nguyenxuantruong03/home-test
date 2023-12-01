@@ -1,20 +1,80 @@
+'use client'
+
 import { ChevronDown, ChevronRight, Menu, ShoppingCart } from "lucide-react";
 import "./navbar.scss";
 import Image from "next/image";
-
+import { useState, useEffect } from "react";
 const Navbar = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [logoSrc, setLogoSrc] = useState("/images/logo.png")
+  const [prevScrollPosition, setPrevScrollPosition] = useState(0);
+    // Bắt sự kiện scroll và thẩy đổi position khi kéo xuống thì static kéo lên là fixed
+    useEffect(() => {
+      const handleScroll = () => {
+        const currentScrollPosition = window.scrollY;
+        // Determine scroll direction
+        const isScrollingDown = currentScrollPosition > prevScrollPosition;
+        // Update the scroll position
+        setScrollPosition(currentScrollPosition);
+        // Change the position based on the scroll direction
+        const navbar = document.querySelector(".screen-navbar");
+        if (navbar instanceof HTMLElement) {
+          navbar.style.position = isScrollingDown ? "static" : "fixed";
+        }
+        // Update the previous scroll position
+        setPrevScrollPosition(currentScrollPosition);
+      };
+      // Attach the event listener
+      window.addEventListener("scroll", handleScroll);
+      // Detach the event listener on component unmount
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, [prevScrollPosition]);
+
+    // Set scroll khi window Y lớn hơn 1
+  useEffect(() => {
+    setIsScrolled(scrollPosition > 200);
+    // Change the logo source when scrolled
+    setLogoSrc(isScrolled ? "/images/logo2.png" : "/images/logo.png");
+  }, [scrollPosition]);
+
+    // Change the color when scrolled for all className".item.modal"
+  useEffect(() => {
+    const colorStyle = {
+      color: isScrolled ? "#333" : "white",
+    };
+
+    const itemModals = document.querySelectorAll('.item.modal');
+    itemModals.forEach((itemModal) => {
+      if (itemModal instanceof HTMLElement) {
+        Object.assign(itemModal.style, colorStyle);
+      }
+    });
+  }, [isScrolled]);
+
+  const backgroundStyle = {
+    backgroundColor: isScrolled ? "white" : "transparent",
+    animation: isScrolled ? "fadeIn 1s ease-in both" : "none",
+  };
+
+  const colorStyle = {
+    color: isScrolled ? "#333" : "white",
+  };
+  
   return (
-    <div className="screen-navbar">
-      <div className="navbar">
+    <div className={`screen-navbar fadein${isScrolled ? "scrolled" : ""}`}>
+    <div className="navbar fadein" style={backgroundStyle}>
         <Image
-          src="/images/logo.png"
+          src={logoSrc}
           className="logo"
           height="22"
           width="92"
           alt="logo"
         />
         <div className="menuwrapper ">
-          <span className="item modal">
+          <span className="item  modal">
             Home
             <ChevronDown width="14" className="item-icon" />
           </span>
@@ -199,10 +259,10 @@ const Navbar = () => {
             <li className="menu-item">Singhle Product With Sidebar</li>
         </ul>  
 
-          <span className="item1">
+          <span className="item1" style={colorStyle}>
             <Menu width="16" />
           </span>
-          <span className="item2">
+          <span className="item2" style={colorStyle}>
             <ShoppingCart width="14" />
             <p className="dot">0</p>
           </span>

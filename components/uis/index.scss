@@ -1,20 +1,4 @@
-//Container
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-.md-max-w-3xl {
-  @media (min-width: 768px) {
-    max-width: 48rem; /* Adjust the value as needed */
-  }
-}
-.lg-max-w-7xl {
-  @media (min-width: 1024px) {
-    max-width: 80rem; /* Adjust the value as needed */
-  }
-}
-
-//TextIcon
+//-------------------------------------------TextIcon-------------------------------------------
 .input-container {
   display: flex;
   flex-direction: column;
@@ -47,7 +31,7 @@
   color: #9b9b9b;
 }
 
-//Option icon
+//-------------------------------------------Option icon-------------------------------------------
 .select-container {
   display: flex;
   justify-content: center;
@@ -103,7 +87,7 @@
   }
 }
 
-//popular
+//-------------------------------------------Popular-------------------------------------------
 .card-popular {
   position: relative;
   transition: transform 0.3s ease;
@@ -134,7 +118,7 @@
   font-family: "Work Sans", sans-serif;
 }
 
-//Best value trip
+//-------------------------------------------Best value trip-------------------------------------------
 .card-product-screen {
   width: 395px;
   height: 388px;
@@ -210,7 +194,7 @@
   margin-right: 2px;
 }
 
-//Currency
+//-------------------------------------------Currency-------------------------------------------
 .currency-screen{
   display: flex;
   padding: 0px 5px 0px 5px;
@@ -263,7 +247,7 @@ font-weight: 900;
   justify-content: center;
 }
 
-//Card new 
+//-------------------------------------------Card new-------------------------------------------
 .card-new-screen {
   width: 395px;
   height: 535px;
@@ -324,7 +308,7 @@ font-weight: 900;
   width: 180px;
 }
 
-//Footer
+//----------------------------------Footer-------------------------------------------
 .footer-screen{
   padding: 0 116px;
 }
@@ -452,4 +436,124 @@ color: #ccc;
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin-left: 15px;
+}
+
+//-------------------------------------------setting-modal-------------------------------------------
+.settingmodal-screen{
+  overflow-y: auto;
+}
+.settingmodal-image{
+margin-top: 30px;
+}
+.settingmodal-image-1 {
+  position: relative;
+  display: inline-block;
+}
+
+.settingmodal-image-2{
+  position: relative;
+  float: right;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay h2 {
+  color: white;
+  margin-bottom: 5px;
+  font-size: 12px;
+  width: 120px; 
+  height: 22px; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: nowrap;
+  text-align: center;
+}
+
+.overlay button {
+  padding: 8px 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: 2px solid #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+
+.settingmodal-image-1:hover .overlay {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.overlay button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.settingmodal-image-2:hover .overlay {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.setttingmodal-color-cricle {
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  background-color: #ccc;
+  display: inline-block;
+  margin: 3.8px; 
+  cursor: pointer;
+
+  &:nth-child(1) {
+    background: #FF4A52;
+  }
+  &:nth-child(2) {
+    background: #FF9500;
+  }
+  &:nth-child(3) {
+    background: #FFCC00;
+  }
+  &:nth-child(4) {
+    background: #4CD964;
+  }
+  &:nth-child(5) {
+    background: #5AC8FA;
+  }
+  &:nth-child(6) {
+    background: #007AFF;
+  }
+  &:nth-child(7) {
+    background: #5856D6;
+  }
+  &:nth-child(8) {
+    background: #FF2D55;
+  }
+}
+
+.color-cricle8 {
+  background-color: #ff0000; 
+}
+
+.settingmodal-styling{
+  margin-bottom:30px;
 }

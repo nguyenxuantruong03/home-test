@@ -1,7 +1,5 @@
 import React from "react";
 interface HeadingDescriptionProps {
-  time?: string;
-  readmore?: string;
   heading?: string;
   description?: string;
   fontSizeheading?: string;
@@ -10,6 +8,8 @@ interface HeadingDescriptionProps {
   textalign?: string;
   fontweightdes?: string |number;
   colordes?: string;
+  fontweighthed?: string;
+  marginhed?: string;
 }
 
 const HeadingDescription: React.FC<HeadingDescriptionProps> = ({
@@ -20,7 +20,9 @@ const HeadingDescription: React.FC<HeadingDescriptionProps> = ({
   description,
   color,
   fontSizedescription,
-  colordes
+  colordes,
+  fontweighthed,
+  marginhed
 }) => {
   const headingStyle: React.CSSProperties = {
     textAlign: (textalign as React.CSSProperties["textAlign"]) || "center",
@@ -29,7 +31,8 @@ const HeadingDescription: React.FC<HeadingDescriptionProps> = ({
     marginBlockEnd: "0em",
     color: color || "#333",
     fontFamily: "'Poppins', sans-serif", 
-    fontWeight: 900, 
+    fontWeight: fontweighthed || 900, 
+    margin: marginhed || "0px",
   };
   const descriptionStyle: React.CSSProperties = {
     textAlign: (textalign as React.CSSProperties["textAlign"]) || "center",

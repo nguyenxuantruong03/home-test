@@ -3,6 +3,8 @@ import Footer from "@/components/footer/footer";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import BackToTop from "@/components/backtotop/backToTop";
+import Setting from "@/components/setting/setting";
 
 const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 
@@ -20,7 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={poppins.className}>
         <Navbar />
+        <Setting />
         {children}
+        <BackToTop />
     <Footer />
       </body>
     </html>
