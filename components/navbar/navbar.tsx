@@ -13,7 +13,9 @@ const Navbar = () => {
   const [logoSrc, setLogoSrc] = useState("/images/logo.png")
   const [prevScrollPosition, setPrevScrollPosition] = useState(0);
   const [isOpen, setIsOpen] = useState(false)
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(() => {
+    return typeof window !== 'undefined' ? window.innerWidth : 0;
+  });
   const handleClick = () => {
     setIsOpen(!isOpen);
 };
@@ -54,9 +56,9 @@ useEffect(() => {
       };
   
       const handleResize = () => {
-        setWindowWidth(window.innerWidth);
-      };
-  
+        // Check if window is defined before accessing innerWidth
+        setWindowWidth(typeof window !== 'undefined' ? window.innerWidth : 0);
+      }
       window.addEventListener("scroll", handleScroll);
       window.addEventListener("resize", handleResize);
   
