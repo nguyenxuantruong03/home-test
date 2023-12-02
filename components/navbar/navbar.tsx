@@ -67,11 +67,11 @@ useEffect(() => {
     }, [prevScrollPosition, windowWidth]);
 
     // Set scroll khi window Y lớn hơn 1
-  useEffect(() => {
-    setIsScrolled(scrollPosition > 50);
-    // Change the logo source when scrolled
-    setLogoSrc(isScrolled ? "/images/logo2.png" : "/images/logo.png");
-  }, [scrollPosition]);
+    useEffect(() => {
+      setIsScrolled(scrollPosition > 50);
+      // Change the logo source when scrolled
+      setLogoSrc(isScrolled ? "/images/logo2.png" : "/images/logo.png");
+  }, [scrollPosition, isScrolled]);  
 
     // Change the color when scrolled for all className".item.modal"
   useEffect(() => {
