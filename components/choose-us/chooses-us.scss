@@ -19,6 +19,15 @@
     }
     }
    
-    @media only screen and (max-width: 420px) { 
-    
+    @media (max-width: 450px) { 
+        .screen-choose-us{
+            padding-top: 90px;
+        }
+        .choose-us-wrapper{
+            display: block;
+            max-width: 450px ;
+        }
+        .screen-choose-us{
+            padding: 30px 20px;
+        }
     }

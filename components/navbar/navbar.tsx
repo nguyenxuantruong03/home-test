@@ -13,6 +13,7 @@ const Navbar = () => {
   const [logoSrc, setLogoSrc] = useState("/images/logo.png")
   const [prevScrollPosition, setPrevScrollPosition] = useState(0);
   const [isOpen, setIsOpen] = useState(false)
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const handleClick = () => {
     setIsOpen(!isOpen);
 };
@@ -37,29 +38,37 @@ useEffect(() => {
     useEffect(() => {
       const handleScroll = () => {
         const currentScrollPosition = window.scrollY;
-        // Determine scroll direction
         const isScrollingDown = currentScrollPosition > prevScrollPosition;
-        // Update the scroll position
         setScrollPosition(currentScrollPosition);
-        // Change the position based on the scroll direction
+  
         const navbar = document.querySelector(".screen-navbar");
         if (navbar instanceof HTMLElement) {
-          navbar.style.position = isScrollingDown ? "static" : "fixed";
+          if (windowWidth <= 450) {
+            navbar.style.position = "fixed";
+          } else {
+            navbar.style.position = isScrollingDown ? "static" : "fixed";
+          }
         }
-        // Update the previous scroll position
+  
         setPrevScrollPosition(currentScrollPosition);
       };
-      // Attach the event listener
+  
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+  
       window.addEventListener("scroll", handleScroll);
-      // Detach the event listener on component unmount
+      window.addEventListener("resize", handleResize);
+  
       return () => {
         window.removeEventListener("scroll", handleScroll);
+        window.removeEventListener("resize", handleResize);
       };
-    }, [prevScrollPosition]);
+    }, [prevScrollPosition, windowWidth]);
 
     // Set scroll khi window Y lớn hơn 1
   useEffect(() => {
-    setIsScrolled(scrollPosition > 200);
+    setIsScrolled(scrollPosition > 50);
     // Change the logo source when scrolled
     setLogoSrc(isScrolled ? "/images/logo2.png" : "/images/logo.png");
   }, [scrollPosition]);

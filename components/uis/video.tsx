@@ -37,6 +37,8 @@ const Video: React.FC<Props> = ({
       </video>
       <div className="content-slider">
         <HeadingDescription
+          fontSizeheading="22px"
+          fontSizedescription="14px"
           heading="Where do you want to go?"
           description="Trips, experiences, and places. All in one service."
           color="white"

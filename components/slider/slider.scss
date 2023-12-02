@@ -76,6 +76,40 @@
   }
  }
 
- @media only screen and (max-width: 420px) { 
- 
+ @media (max-width: 450px) { 
+  .parallax video {
+    width: 240%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .advance-serach {
+    padding-left: 30px;
+    margin-top: 0px;
+  }
+  .input-select-slider-first{
+    display: grid;
+    grid-row: 3;
+    margin-top: 20px;
+    max-width: 450px;
+  }
+  .input-select-slider-second{
+    display: grid;
+    grid-row: 3;
+    margin-top: 20px;
+    padding-left: 32px;
+    padding-right: 235px;
+    max-width: 450px;
+  }
+  .content-slider{
+    padding: 0px 30px;
+  }
+  .parallax{
+    height: 550px;
+  }
+  .content-slider{
+    margin-top: 80px;
+  }
  }

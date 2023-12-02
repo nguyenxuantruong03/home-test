@@ -5,7 +5,7 @@ const PopularDestination = () => {
     return (  
         <div className="screen-popular">
             <div className='heading-popular'>
-                <HeadingDescription heading='Popular Destinations' description='World best tourist destinations'/>
+                <HeadingDescription fontSizeheading="22px" fontSizedescription="14px" heading='Popular Destinations' description='World best tourist destinations'/>
             </div>
             <div className='content-popular'>
                 <Cardpopular url="/images/tokyo-popular.jpg" label='Tokyo'/>

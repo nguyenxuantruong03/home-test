@@ -8,6 +8,8 @@ const ChooseUs = () => {
       <HeadingDescription
         heading="Why Choose Us"
         description="Here are reasons you should plan trip with us"
+        fontSizeheading="22px" 
+        fontSizedescription="14px"
       />
       <div className="choose-us-wrapper">
         <InfoChooseUs

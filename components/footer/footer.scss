@@ -8,3 +8,9 @@
     background-color: black;
     padding-bottom: 50px;
 }
+
+@media (max-width: 450px) { 
+    .screen-footer{
+        padding-top: 40px;
+    }
+  }

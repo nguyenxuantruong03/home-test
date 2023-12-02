@@ -21,6 +21,17 @@
     }
    }
   
-   @media only screen and (max-width: 420px) { 
-   
+   @media(max-width: 450px) {
+    .screen-valuetrip{
+        padding-top: 30px;
+    } 
+    .content-besttrip{
+        display: block;
+        max-width: 450px ;
+        margin-top: 50px;
+        cursor: pointer;
+    }
+    .content-besttrip{
+        padding: 0px 20px 30px 20px;
+    }
    }

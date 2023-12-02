@@ -8,6 +8,8 @@ const BestValueTrip = () => {
         <HeadingDescription
           heading="Best Value Trips"
           description="Best offers trips from us"
+          fontSizeheading="22px" 
+          fontSizedescription="14px"
         />
       </div>
       <div className="content-besttrip">

@@ -7,6 +7,8 @@ const News = () => {
       <HeadingDescription
         heading="Articles & Tips"
         description="Explore some of the best tips from around the world"
+        fontSizeheading="22px" 
+        fontSizedescription="14px"
       />
       <div className="news-wrapper">
         <CardNew

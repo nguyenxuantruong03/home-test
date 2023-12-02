@@ -276,11 +276,18 @@
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media (max-width: 450px) {
   .item.modal {
     display: none;
   }
   .navbar {
-    padding: 0 70px;
+    padding: 0 30px;
+  }
+  .navbar .menuwrapper .item1{
+    right: 42px;
+    margin-left: 0;
+  }
+  .item2{
+    right: 30px;
   }
 }

@@ -37,8 +37,11 @@
   }
  }
 
- @media only screen and (max-width: 420px) { 
- 
+ @media (max-width: 450px) { 
+  .inline {
+    width: 340px;
+    margin-bottom: 8px;
+  }
  }
 
 //-------------------------------------------Option icon-------------------------------------------
@@ -81,11 +84,14 @@
   }
  }
 
- @media only screen and (max-width: 420px) { 
- 
+ @media (max-width: 450px) { 
+  .select-box {
+    width: 370px;
+    margin-bottom: 8px;
+  }
  }
 
-//Button
+//--------------------------------Button--------------------------------------
 .custom-button {
   background-color: #ff4857;
   width: 280px;
@@ -113,8 +119,10 @@
   }
  }
 
- @media only screen and (max-width: 420px) { 
- 
+ @media (max-width: 450px) { 
+  .custom-button {
+    width: 370px;
+  }
  }
 
 //-------------------------------------------Popular-------------------------------------------
@@ -159,8 +167,14 @@
   }
  }
 
- @media only screen and (max-width: 420px) { 
- 
+ @media (max-width: 450px) { 
+  .card-screen{
+    margin-top:20px;
+  }
+  .card-popular {
+    width: 390px;
+    height: 250px;
+  }
  }
 
 //-------------------------------------------Best value trip-------------------------------------------
@@ -252,8 +266,22 @@
 }
  }
 
- @media only screen and (max-width: 420px) { 
- 
+ @media (max-width: 450px) { 
+  .card-product-screen {
+    width: 390px;
+    height: 388px;
+    margin-bottom: 20px;
+  }
+  .card-product-image {
+    width: 390px;
+    height: 260px;
+  }
+  .card-product-sale{
+    height: 35px;
+    width: 35px;
+    right: -12px;
+    top: -12px;
+  }
  }
 
 
@@ -296,11 +324,11 @@ font-weight: 900;
   }
   }
  
-  @media only screen and (max-width: 420px) { 
+  @media (max-width: 450px) { 
   
   }
 
-//InfoChooseUs
+//---------------------------------------------------InfoChooseU----------------------------------------------s
 
 .info-choose-us-screen{
   width: 395px;
@@ -332,8 +360,14 @@ font-weight: 900;
     width: 228px;
   }
   }
-  @media only screen and (max-width: 420px) { 
-  
+  @media (max-width: 450px) { 
+    .info-choose-us-screen{
+      width: 390px;
+      margin-bottom: 50px;
+    }
+    .info-choose-us-wrapper-image{
+      width: 390px;
+    }
   }
 
 //-------------------------------------------Card new-------------------------------------------
@@ -406,8 +440,16 @@ font-weight: 900;
    height: 155px;
   }
   }
-  @media only screen and (max-width: 420px) { 
-  
+  @media (max-width: 450px) { 
+    .card-new-screen {
+      width: 390px;
+      height: 535px;
+      margin-bottom: 20px;
+    }
+    .card-new-image {
+      width: 390px; 
+      height: 255px;
+     }
   }
 
 //----------------------------------Footer-------------------------------------------
@@ -521,7 +563,7 @@ margin-top: 10px;
 }
 .footer-copyright{
   margin-top: 40px;
-border-top: 1px solid #222222;
+border-top: 1px solid #ccc;
 font-size: 12px;
 color: #ccc;
 }
@@ -586,8 +628,52 @@ color: #ccc;
     }
     
   }
-  @media only screen and (max-width: 420px) { 
-  
+  @media(max-width: 450px) { 
+    .footer-screen{
+      padding: 0 20px;
+    }
+    .footer-wrapper{
+      display: block;
+    }
+    .footer-title{
+      margin-block-start: 0em;
+    }
+    .footer-awards{
+      width: 390px;
+      height: 243px;
+      padding-top: 45px;
+      }
+    .footer-contact{
+        width: 390px;
+        margin-top: 45px;
+      }
+    .footer-recent {
+        width: 390px;
+        height: 314px;
+        margin-top: 45px;
+    }
+    .footer-copyright {
+      margin-top: 0px;
+  }
+    .footer-copyright-wrapper{
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .footer-copyright-title{
+      position: static;
+      margin-left: 0px;
+    }
+    .footer-copyright-text{
+      display: none;
+    }
+    .footer-recent-image,
+    .footer-recent-image-border-not-margin-right{
+      width: 110px;
+      height: 110px;
+    }
+    
   }
 
 //-------------------------------------------setting-modal-------------------------------------------

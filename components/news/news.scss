@@ -17,6 +17,12 @@
         padding: 0 20px;
     }
     }
-    @media only screen and (max-width: 420px) { 
-    
+    @media (max-width: 450px) { 
+        .news-wrapper{
+            padding: 30px 20px;
+        }
+        .news-wrapper{
+            display: block;
+            max-width:450px ;
+        }
     }
