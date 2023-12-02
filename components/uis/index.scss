@@ -709,3 +709,133 @@ margin-top: 30px;
 .settingmodal-styling{
   margin-bottom:30px;
 }
+
+
+//-------------------------------------Navbarmodal--------------------------------------------
+.navbarmodal-screen{
+  margin-top: 80px;
+  span{
+  display: flex;
+  line-height: normal;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  &:hover{
+    color: #FF2D55;
+  }
+}
+}
+.navbarmodal-items{
+  list-style: none;
+  line-height: normal;
+  font-size: 20px;
+  font-weight: 700;
+  &:hover{
+    color: #FF2D55;
+    cursor: pointer;
+  }
+}
+.navbarmodal-subnav{
+  line-height: normal;
+  color: #FF2D55;
+  &:hover{
+    color: #fff;
+    cursor: pointer;
+  }
+}
+.navbarmodal-cardnavbar-margintop{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.navbarmodal-back{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 30px;
+  &:hover{
+    color: #FF2D55;
+    cursor: pointer;
+  }
+}
+
+.navbar-modal-social{
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  }
+  .navbar-facebook{
+    margin-right: 15px;
+  }
+  .navbar-facebook-icon{
+    width: 40px;
+    height: 40px;
+    color: #2D5F9A;
+  }
+  .navbar-twitter{
+    margin-right: 15px;
+  }
+  .navbar-twitter-icon{
+    width: 45px;
+    height: 45px;
+    color: #00C3F3;
+  }
+  .navbar-youtube{
+    margin-right: 15px;
+  }
+  .navbar-youtube-icon{
+    width: 55px;
+    height: 55px;
+    color: #cc181e;
+  }
+  .navbar-pinterest{
+    margin-right: 15px;
+  }
+  .navbar-pinterest-icon{
+    width: 40px;
+    height: 40px;
+    color: #bd081c;
+  }
+  .navbar-instagram-icon{
+    width: 45px;
+    height: 45px;
+    color: #405de6;
+    border-radius: 50%;
+  }
+//-------------------------------------CardnavbarProduct--------------------------------------------
+.card-navbar-product-screen{
+    width: 265px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.card-navbar-product-image{
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+  z-index: 10;
+}
+.card-navbar-product-wrapper{
+  position: relative;
+}
+.card-navbar-product-heading{
+  position: absolute;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  bottom: 75px;
+  left: 25px;
+  color: #fff;
+}
+.card-navbar-product-review{
+  position: relative;
+}
+.card-navbar-product-start{
+  position: absolute;
+  bottom: 45px;
+  left: 25px;
+}

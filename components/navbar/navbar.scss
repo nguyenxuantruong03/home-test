@@ -172,7 +172,7 @@
       font-weight: 600;
       margin-left: 30px;
       cursor: pointer;
-      color:#fff;
+      color: #fff;
     }
     .item-icon {
       margin-bottom: -8px;
@@ -186,6 +186,49 @@
       cursor: pointer;
       color: #fff;
     }
+
+    .navbar-modal {
+      position: fixed;
+      width: 300px;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.7);
+      top: 0;
+      right: -500px;
+      z-index: 100;
+      overflow-y: auto;
+      cursor: pointer;
+      overflow-y: auto;
+      height: 100vh; /* Set the desired height for your modal */
+      overflow-y: auto;
+    }
+
+    .navbar-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 99;
+    }
+
+    .navbar-close-icon{
+      color: #ff4a52;
+      width: 50px;
+      height: 50px;
+      font-size: 15px;
+      transition: transform 0.3s ease;
+      float: right;
+    }
+
+    .navbar-close-icon:hover{
+      transform: translateY(-5px);
+    }
+
+    .navbar-modal.opened {
+      right: 0;
+    }
+
     .item2 {
       position: relative;
       top: 8px;
@@ -209,35 +252,35 @@
   }
 }
 
-.fadein{
+.fadein {
   animation: fadeIn 1s ease-in both;
 }
 
 @keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translate3d(0, -20%, 0);
-	}
-	to {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
-@media (min-width:600px) and (max-width: 850px) { 
-  .item.modal{
+@media (min-width: 600px) and (max-width: 850px) {
+  .item.modal {
     display: none;
   }
   .navbar {
     padding: 0 70px;
   }
- }
+}
 
- @media only screen and (max-width: 420px) { 
-  .item.modal{
+@media only screen and (max-width: 420px) {
+  .item.modal {
     display: none;
   }
   .navbar {
     padding: 0 70px;
   }
- }
+}

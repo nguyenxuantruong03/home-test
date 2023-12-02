@@ -4,11 +4,35 @@ import { ChevronDown, ChevronRight, Menu, ShoppingCart } from "lucide-react";
 import "./navbar.scss";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import NavbarModal from "../uis/navbar-modal";
+import { IoIosCloseCircle } from "react-icons/io";
 const Navbar = () => {
+
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
   const [logoSrc, setLogoSrc] = useState("/images/logo.png")
   const [prevScrollPosition, setPrevScrollPosition] = useState(0);
+  const [isOpen, setIsOpen] = useState(false)
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+};
+
+//Ngăn chặn scroll down bên ngoài màn hình khi đang mở navbarmodal
+useEffect(() => {
+  if (isOpen) {
+    // Prevent scrolling on the body
+    document.body.style.overflow = 'hidden';
+  } else {
+    // Allow scrolling on the body
+    document.body.style.overflow = 'auto';
+  }
+
+  // Cleanup the style on component unmount
+  return () => {
+    document.body.style.overflow = 'auto';
+  };
+}, [isOpen]);
+
     // Bắt sự kiện scroll và thẩy đổi position khi kéo xuống thì static kéo lên là fixed
     useEffect(() => {
       const handleScroll = () => {
@@ -258,10 +282,19 @@ const Navbar = () => {
             <li className="menu-item">Signle Product Fullwdith</li>
             <li className="menu-item">Singhle Product With Sidebar</li>
         </ul>  
-
-          <span className="item1" style={colorStyle}>
-            <Menu width="16" />
+        
+          <span className={`item1 ${isOpen ? 'opened' : ''}`} style={colorStyle}>
+            <Menu width="16" onClick={handleClick}/>
           </span>
+          {isOpen && (
+            <>
+             <div className="navbar-overlay" onClick={handleClick}></div>
+                <div className={`navbar-modal ${isOpen ? 'opened' : ''}`}>
+                <IoIosCloseCircle className="navbar-close-icon" onClick={handleClick}/>
+                  <NavbarModal />
+                </div>
+                </>
+            )}
           <span className="item2" style={colorStyle}>
             <ShoppingCart width="14" />
             <p className="dot">0</p>

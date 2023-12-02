@@ -5,13 +5,40 @@
     background-color: #fff;
     border-radius: 5px;
     transition: right 0.3s ease; 
-    z-index: 999;
+    z-index: 9;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
-.setting-wrapper {
-    height: 125px;
-    padding: 10px 10px 0px 10px;
+.setting-icon-wrapper {
+    position: relative;
+    cursor: pointer;
+    padding: 5px 10px 0px 10px;
+}
+
+.setting-label {
+    position: absolute;
+    top: 5%;
+    left: -285%;
+    transform: translateX(-40%);
+    padding: 6px;
+    border-radius: 3px;
+    display: none;
+    background-color: black;
+    color: #fff;
+    font-size: 12px;
+}
+.setting-label::after{
+    content: " ";
+    position: absolute;
+    right: -39px;
+    top: 0;
+    border-width: 15.9px 20px;
+    border-style: solid;
+    border-color: transparent transparent transparent black ;
+    cursor: pointer;
+}
+.setting-icon-wrapper:hover .setting-label {
+    display: block;
 }
 
 .setting-modal {
@@ -19,12 +46,11 @@
     height: 100%;
     padding: 20px;
     background-color: #fff;
-    z-index: 20;
     position: fixed;
     top: 0;
     right: -500px; 
     transition: right 0.3s ease; 
-    z-index: 999;
+    z-index: 10;
     overflow-y: auto;
     cursor: pointer;
 }

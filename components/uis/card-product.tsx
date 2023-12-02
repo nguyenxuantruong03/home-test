@@ -2,7 +2,7 @@ import Image from "next/image";
 import Currency from "./currency";
 import { Clock3 } from "lucide-react";
 import { FaStar } from "react-icons/fa";
-
+import "./index.scss";
 interface CardProductProps {
   url: string;
   heading: string;
